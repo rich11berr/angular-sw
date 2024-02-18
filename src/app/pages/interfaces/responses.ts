@@ -14,7 +14,9 @@ export interface Planet {
     terrain: string,
     url: string,
     films: string[],
-    residents: string[]
+    residents: string[],
+    created: string,
+    edited: string
 }
 
 export enum PlanetClimate {

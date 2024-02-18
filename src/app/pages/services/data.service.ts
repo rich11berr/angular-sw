@@ -18,4 +18,8 @@ export class DataService {
   public getPlanets(page?: string): Observable<ResponseContainer<Planet>> {
     return this._httpClient.get<ResponseContainer<Planet>>(`${baseUrl}planets${page ? `/?page=${page}` : ''}`);
   }
+
+  public getPlanetsById(id: string): Observable<Planet> {
+    return this._httpClient.get<Planet>(`${baseUrl}planets/${id}`);
+  }
 }

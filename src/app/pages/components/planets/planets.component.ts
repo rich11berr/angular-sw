@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { PlanetComponent } from '../../../entities/components/planet/planet.component';
+import { RouterButtonComponent } from '../../../shared/components/router-button/router-button.component';
 import { getId } from '../../../shared/utils/getId';
 import { Planet } from '../../interfaces/responses';
 import { DataService } from '../../services/data.service';
@@ -8,7 +9,7 @@ import { DataService } from '../../services/data.service';
 @Component({
   selector: 'app-planets',
   standalone: true,
-  imports: [PlanetComponent, RouterModule],
+  imports: [PlanetComponent, RouterModule, RouterButtonComponent],
   templateUrl: './planets.component.html',
   styleUrl: './planets.component.scss'
 })

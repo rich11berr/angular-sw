@@ -13,10 +13,36 @@
     overflow-y: scroll;
 
     &__item {
-      width: 200px;
-      height: 150px;
+      width: 250px;
+      height: 160px;
 
       border: 2px solid $yellow;
+
+      cursor: pointer;
+
+      padding: 10px;
+
+      transition: border 0.3s ease-in-out;
+
+      &:hover {
+        border: 2px solid $green;
+      }
+
+      h3 {
+        color: $red;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        span {
+          span {
+            color: $dimedPrimary;
+          }
+        }
+      }
     }
   }
 }
